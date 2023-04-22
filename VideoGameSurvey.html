@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet"  href="style.css" />
+        <meta charset="utf-8" />
+        <script src="code.js"></script>
+        <title>Project 4 Website Depoyment Page 3</title>
+    </head>
+<body>
+    <div id="witcher"></div>
+
+    <div id="parallaxDivide">
+        <main id="wrapper">
+            <h1>Video Game Survey</h1>
+            <nav id="navigation">
+                <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="RPGS.html">Western RPGS vs Japanese RPGS</a></li>
+                </ul>
+            </nav>
+            <hr />
+    
+            <form method="post" 
+            id="survey_form" 
+            action="http://symlink.dk/code/php/submit/">
+                <fieldset>
+                    <legend>Do you play video games?</legend>
+                    <ul>
+                        <li><input type="radio" name="Question" id="Yes" value="YES" /> <label for="Yes">Yes</label></li>
+                        <li><input type="radio" name="Question" id="No" value="NO" /> <label for="No">No</label></li>
+                    </ul>
+                    
+                    <div class="error" id="Question_error">* Please answer yes or no.</div>
+
+                </fieldset>
+                <div id="videoGameQuestions">
+    
+                <hr />
+    
+                <fieldset>
+                    <div id="videoGameQuestionsGenre">
+                    <h3>What is your favourite Video Game genre?</h3>
+                    <select id="videoGameGenres" name="videoGameGenres">
+                        <option>- Video Game Genres -</option>
+                        <option value="1">Sandbox</option>
+                        <option value="2">Real-time strategy (RTS)</option>
+                        <option value="3">Shooters (FPS and TPS)</option>
+                        <option value="4">Multiplayer online battle arena (MOBA)</option>
+                        <option value="5">Role-playing (RPG, ARPG, CRPG and More)</option>
+                        <option value="6">Simulation and sports</option>
+                        <option value="7">Puzzlers and party games</option>
+                        <option value="8">Action-adventure</option>
+                        <option value="9">Survival and horror</option>
+                        <option value="10">Platformer</option>
+                        <option value="11">MMORPG</option>
+                    </select>
+                    <div class="error" id="videoGameQuestionsGenre_error">* Please answer your question.</div>
+                    </div>
+
+                </fieldset>
+    
+                <hr />
+    
+                <fieldset>
+                    <div id="videoGameQuestionsFavourite">
+                    <h3>Favourite Video Game of All time?</h3>
+                    <input type="text" id="Favourite" name="Favourite" size="20" maxlength="20" />
+                    <div class="error" id="videoGameQuestionsFavourite_error">* Please answer your question.</div>
+                    </div>
+                </fieldset>
+    
+                <hr />
+    
+                <fieldset>
+                    <div id="videoGameQuestionsFavouriteSeries">
+                    <h3>Favourite Video Game Series?</h3>
+                    <input type="text" id="FavouriteSeries" name="FavouriteSeries" size="20" maxlength="20" />
+                    <div class="error" id="videoGameQuestionsFavouriteSeries_error">* Please answer your question.</div>
+                    </div>
+                </fieldset>
+    
+                <hr />
+    
+                <fieldset>
+                    <div id="videoGameQuestionsFavouriteCharacter">
+                    <h3>Favourite Video Game Character?</h3>
+                    <input type="text" id="FavouriteCharacter" name="FavouriteCharacter" size="20" maxlength="20" />
+                    <div class="error" id="videoGameQuestionsFavouriteCharacter_error">* Please answer your question.</div>
+                    </div>
+                </fieldset>
+    
+                <hr />
+            
+                <fieldset>
+                    <div id="videoGameQuestionsFavouriteVillain">
+                    <h3>Favourite Video Game Villain?</h3>
+                    <input type="text" id="FavouriteVillain" name="FavouriteVillain" size="20" maxlength="20" />
+                    <div class="error" id="videoGameQuestionsFavouriteVillain_error">* Please answer your question.</div>
+                    </div>
+                </fieldset>
+    
+                <hr />
+    
+                <fieldset>
+                    <div id="videoGameQuestionsWorst">
+                    <h3>Worst Video Game of All Time</h3>
+                    <input type="text" id="Worst" name="Worst" size="20" maxlength="20" />
+                    <div class="error" id="videoGameQuestionsWorst_error">* Please answer your question.</div>
+                    </div>
+                </fieldset>
+    
+                <hr />
+    
+                <fieldset>
+                    <h3>Do you know Bioware?</h3>
+                    <ul>
+                        <li><input type="radio" name="BiowareQuestion" id="BiowareYes" value="biowareYes" /> <label for="BiowareYes">Yes</label></li>
+                        <li><input type="radio" name="BiowareQuestion" id="BiowareNo" value="biowareNo" /> <label for="BiowareNo">No</label></li>
+                    </ul>
+
+                    <div class="error" id="BiowareQuestion_error">* Please answer yes or no.</div>
+                    
+                    <h4 id="BiowareAnswerHeading">Which Bioware series do you prefer?</h4>
+                    <div id="BiowareAnswer">
+                        <ul>
+                            <li><input type="radio" name="BiowareGame" id="DragonAge" value="DA" /> <label for="DragonAge">Dragon Age</label></li>
+                            <li><input type="radio" name="BiowareGame" id="MassEffect" value="ME" /> <label for="MassEffect">Mass Effect</label></li>
+                        </ul>
+                        <div class="error" id="BiowareAnswer_error">* Please answer your question.</div>
+                    </div>
+                </fieldset>
+    
+                <hr />
+    
+                <fieldset>
+                    <div id="videoGameQuestionsImapct">
+                        <h3>How did Video Games imapct you for the better?</h3>
+                        <textarea id="VideoGameImpact" name="VideoGameImpact" rows="8" cols="80"></textarea>
+                        <div class="error" id="videoGameQuestionsImapct_error">* Please answer your question.</div>
+                    </div>
+                </fieldset>
+    
+                </div>
+                <fieldset>
+                    <hr />
+                    <button type="reset" >Clear Survey</button>
+                    <button type="submit" >Process Survey</button>
+                </fieldset>
+            </form>
+        </main>
+    </div>
+
+    <div id="dragonAgeBackground"></div>
+</body>
+</html>

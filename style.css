@@ -1,0 +1,137 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#witcher{
+	background-image: url(images/witcher3.png);
+
+	min-height: 320px; 
+
+  /* Create the parallax scrolling effect */
+  	background-attachment: fixed;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+
+#parallaxDivide{
+	width: 100%;
+	background-color: #1b3b85;
+}
+
+#dragonAgeBackground{
+	background-image: url(images/dragon_age_origins.jpg);
+	min-height: 320px; 
+
+  /* Create the parallax scrolling effect */
+  	background-attachment: fixed;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+
+
+#wrapper{
+	width: 50%;
+	margin: 20px auto;
+	background-color: #AEE8F3;
+	border-radius: 10px;
+	box-shadow: 0 0 8px #000;
+	padding: 20px;
+}
+
+fieldset{
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding: 5px;
+	border: none;
+}
+
+fieldset:last-child{
+	margin-bottom: 0px;
+}
+
+legend{
+	text-transform: uppercase;
+	font-weight: bold;
+	padding-bottom: 10px;
+	font-size: 14pt;
+}
+
+ul{
+	list-style: none;
+	margin: 0;
+}
+
+label{
+	font-size: 12pt;
+}
+
+input[type=text], button[type=submit], button[type=reset]{
+	padding: 5px 5px;
+}
+
+h3{
+	margin: 0px 0px 10px 0px;
+}
+
+h4{
+	margin: 0px 0px 10px 0px;
+}
+
+div{
+	margin-bottom: 20px;
+}
+
+p{
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.error
+{
+	color: red;
+	font-style: italic;
+	font-weight: bold;
+	padding: 10px 0;
+	display: none;
+}
+
+#BiowareAnswer, #BiowareAnswerHeading{
+	display: none;
+}
+
+
+#videoGameQuestions{
+	display: none;
+}
+
+nav#navigation{
+	width: 100%;
+	height: 50px;
+	background: linear-gradient(#aed6fb, #5eb7f7, #1088c8);
+	text-align: center;
+}
+
+	nav#navigation ul{
+		margin: 0;
+		padding: 20px;
+		list-style: none;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	nav#navigation ul li{
+		border-right: 1px solid #01527A;
+		border-left: 1px solid #01527A;
+	}
+
+	nav#navigation ul a{
+		font-weight: lighter;
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+		color: #FFF;
+		text-decoration: none;
+	}
+
